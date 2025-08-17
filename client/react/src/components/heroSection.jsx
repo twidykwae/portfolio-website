@@ -3,7 +3,7 @@ import React from "react";
 export default function Hero() {
     return (
         <section className="min-h-screen bg-black text-white">
-            <div className="flex items-center justify-between px-32 py-16 lg:py-32">
+            <div className="flex items-center justify-between px-32 py-16 lg:py-32 mb-0">
                 <div className="flex-1 max-w-2xl">
                     <div className="mb-8">
                         <h1 className="text-6xl lg:text-7xl xl:text-8xl font-light leading-none">
@@ -31,11 +31,11 @@ export default function Hero() {
                 </div>
                     <div className="flex-1 flex justify-center lg:justify-end mt-12 lg:mt-0">
                         <div className="relative">
-                            <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden">
+                            <div className="w-80 h-80 lg:w-96 lg:h-96 overflow-hidden">
                                 <img 
-                                    src="public/transparent-Photoroom.png" 
-                                    alt="Your Name"
-                                    className="w-full h-full object-cover"
+                                    src="/light-bg.jpg" 
+                                    alt="Light"
+                                    className="w-full h-full object-contain"
                                 />
                             </div>
         
