@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@plugin "daisyui";
 @keyframes expand {
   0% { width: 0; }
   50% { width: 100%; }

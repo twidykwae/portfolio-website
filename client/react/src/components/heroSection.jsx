@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
     return (
-        <section className="min-h-screen bg-black text-white">
+        <section className=" bg-black text-white min-h-screen">
             <div className="flex items-center justify-between px-32 py-16 lg:py-32 mb-0">
                 <div className="flex-1 max-w-2xl">
                     <div className="mb-8">

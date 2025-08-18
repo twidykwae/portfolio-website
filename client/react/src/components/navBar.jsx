@@ -1,4 +1,5 @@
 import React from "react";
+import Hero from "./heroSection";
 
 export default function NavBar(){
     return (
@@ -10,9 +11,8 @@ export default function NavBar(){
                 <ul className="hidden md:flex space-x-8">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
                     <li><a href="#">Experience & Proj.</a></li>
-                    <li><a href="#">Side</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>

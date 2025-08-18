@@ -28,11 +28,19 @@ export default function Experience(){
             duration: "February 2025 - Present (Campus Employment)",
             description: "Tutored students in calculus, helping 85% improve their grades by at least one letter and strengthen understanding of complex concepts",
             isActive: false
+        },
+        {
+            company: "NexGen Educational Hub",
+            position: "STEM Tutor",
+            location: "Accra, Ghana",
+            duration: "April 2024 - August 2024",
+            description: "Taught 50+ students (ages 6–15) robotics, programming, and design, mentoring them through challenges that built problem-solving, creativity, and confidence in STEM.",
+            isActive: false
         }
     ]
 
     return (
-        <section className="min-h-screen bg-black text-white">
+        <section className=" bg-black text-white">
   <div className="max-w-7xl mx-auto px-8 py-16">
     <h2 className="text-3xl font-bold mb-12 relative inline-block">
         Experience
