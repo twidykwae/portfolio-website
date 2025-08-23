@@ -72,7 +72,7 @@ export default function Experience(){
             className={`block text-right w-full transition-colors duration-200 ${
               selected === index
                 ? "text-white font-semibold"
-                : "text-gray-400 hover:text-green-500"
+                : "text-gray-400 hover:text-green-400"
             }`}
           >
             {exp.company}

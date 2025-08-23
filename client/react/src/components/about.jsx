@@ -12,7 +12,7 @@ export default function About() {
           <a
             href="/Twidy's_resume.pdf"
             target="_blank"
-            className="flex items-center gap-2 bg-white text-black border border-black px-8 py-2 rounded-3xl font-medium hover:bg-gray-200 transition"
+            className="flex items-center gap-2 bg-white text-black border border-black px-8 py-2 rounded-3xl font-medium hover:bg-green-400 transition"
           >
             <span>Resume</span>
             <svg

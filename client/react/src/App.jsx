@@ -4,6 +4,7 @@ import Experience from "./components/experience.jsx";
 import About from "./components/about.jsx"
 import Projects from "./components/projects.jsx";
 import BibleVerse from "./components/bibleVerse.jsx";
+import Contact from "./components/contact.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BibleVerse />
       <Experience />
       <Projects />
+      <Contact />
     </>
   );
 }
