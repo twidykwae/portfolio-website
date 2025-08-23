@@ -6,16 +6,16 @@ const router = express.Router();
 
 router.post("/contact", async (req, res) => {
   try {
-    const { firstName, lastName, email, message } = req.body;
+    const { Name, email, message } = req.body;
 
-    if (!firstName || !email) {
-      return res.status(400).json({ error: "First name and email are required." });
+    if (!Name || !email) {
+      return res.status(400).json({ error: "Your name or email is required." });
     }
 
-    const newContact = new Contact({ firstName, lastName, email, message });
+    const newContact = new Contact({ Name, email, message });
     await newContact.save();
 
-    await sendMeEmail({firstName, lastName, email, message});
+    await sendMeEmail({Name, email, message});
     
     res.status(201).json({ message: "Contact form submitted successfully!" });
 

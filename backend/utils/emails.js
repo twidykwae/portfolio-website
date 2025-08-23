@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-export const sendMeEmail = async ({ firstName, lastName, email, message }) => {
+export const sendMeEmail = async ({ Name, email, message }) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -10,10 +10,10 @@ export const sendMeEmail = async ({ firstName, lastName, email, message }) => {
   });
 
   const mailOptions = {
-    from: `"${firstName} ${lastName || ""}" <${email}>`,
+    from: `"${Name ||  ""}" <${email}>`,
     to: process.env.EMAIL_RECEIVER,
     subject: "New Contact Form Message",
-    text: `You received a new message from ${firstName} ${lastName || ""} (${email}):\n\n${message}`,
+    text: `You received a new message from ${Name || ""} (${email}):\n\n${message}`,
   };
 
   return transporter.sendMail(mailOptions);
