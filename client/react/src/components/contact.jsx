@@ -43,7 +43,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="bg-black text-white flex justify-center items-center py-20 px-4">
+    <section id="contact" className="bg-black text-white flex justify-center items-center py-20 px-4">
       <div className="w-full max-w-lg">
         <h2 className="text-2xl font-light text-center mb-8">Contact Me</h2>
 
@@ -54,7 +54,7 @@ export default function Contact() {
             placeholder="Name"
             value={formData.Name}
             onChange={handleChange}
-            className="p-3 rounded-xl bg-gray-800 text-white placeholder-gray-400 font-thin focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="p-3 rounded-xl bg-black border border-gray-800 text-white placeholder-gray-400 font-thin focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           />
           <input
             type="email"
@@ -62,7 +62,7 @@ export default function Contact() {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
-            className="p-3 rounded-xl bg-gray-800 text-white placeholder-gray-400 font-thin focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="p-3 rounded-xl bg-black border border-gray-800 text-white placeholder-gray-400 font-thin focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           />
           <textarea
             name="message"
@@ -70,12 +70,12 @@ export default function Contact() {
             rows="5"
             value={formData.message}
             onChange={handleChange}
-            className="p-3 rounded-xl bg-gray-800 text-white placeholder-gray-400 font-thin focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="p-3 rounded-xl bg-black border border-gray-800 text-white placeholder-gray-400 font-thin focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           ></textarea>
 
           <button
             type="submit"
-            className="bg-indigo-600 hover:bg-indigo-700 text-white font-light py-3 px-6 rounded-xl transition"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-light py-3 px-6 rounded-xl transition"
           >
             Send Message
           </button>

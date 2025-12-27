@@ -16,7 +16,7 @@ app.use(cors({
 
 const PORT = process.env.PORT || 3001;
 
-app.post("/contact", contactRoutes);
+app.use("/", contactRoutes);
 
 app.get("/", (req, res) => {
   res.send("App is working");

@@ -14,14 +14,6 @@ export default function Experience(){
             isActive: true
         },
         {
-            company: "SharpBlades Solutions",
-            position: "Backend Developer",
-            location: "Upland, Indiana",
-            duration: "August 2025",
-            description: "Developed an Express backend with Wave API integration, automating workflows and reducing manual tasks by 80% while also reducing costs.",
-            isActive: false
-        },
-        {
             company: "Taylor University",
             position: "Peer Tutor",
             location: "Upland, Indiana",
@@ -40,7 +32,7 @@ export default function Experience(){
     ]
 
     return (
-        <section className=" bg-black text-white">
+        <section id="experience" className=" bg-black text-white">
   <div className="max-w-7xl mx-auto px-8 py-16">
     <h2 className="text-3xl font-bold mb-12 relative inline-block">
         Experience
@@ -50,7 +42,7 @@ export default function Experience(){
     <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
       
       {/* job details with vertical divider */}
-      <div className="md:col-span-4 border-r border-gray-700 pr-8">
+      <div className="md:col-span-4 border-r border-gray-900 pr-8">
         <h3 className="text-xl font-semibold">
           {experiences[selected].position}
         </h3>
@@ -72,7 +64,7 @@ export default function Experience(){
             className={`block text-right w-full transition-colors duration-200 ${
               selected === index
                 ? "text-white font-semibold"
-                : "text-gray-400 hover:text-green-400"
+                : "text-gray-400 hover:text-blue-500"
             }`}
           >
             {exp.company}
