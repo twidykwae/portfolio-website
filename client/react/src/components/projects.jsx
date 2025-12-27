@@ -1,5 +1,4 @@
 import React from "react";
-import unicoreImage from "../assets/unicore.png";
 
 export default function Projects() {
 
@@ -7,7 +6,7 @@ export default function Projects() {
         {
             name: "UniCore",
             description: "UniCore is a campus-focused platform that helps students connect, find lost items, share prayer requests, and build community in one place",
-            image: unicoreImage,
+            image: "/Screenshot 2025-12-26 224016.png",
             link: "https://www.github.com/twidykwae/new_proj"
         },
         {
